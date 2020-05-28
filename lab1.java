@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 public class lab1 {
 
@@ -7,6 +8,8 @@ public class lab1 {
         System.out.println("LAB-1:::::Salesperson’s Commission In A week");
         System.out.print("LAB-1:::Organisation\nEnter the total number of sales happened = ");
         Scanner s1=new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("###.##");
+
         double commision=-1;
         double salesTotal=s1.nextDouble();
         Boolean flag=true;
@@ -33,7 +36,7 @@ public class lab1 {
         {
 
             System.out.println("---------Result-------\nCommission is "+commision*100+"%");
-            System.out.println("Salesperson has earned $"+salesTotal*commision+" commission for the "+salesTotal+" sales.\n ******KEEP ON GOING******");
+            System.out.println("Salesperson has earned $"+df.format(salesTotal*commision)+" commission for the "+salesTotal+" sales.\n ******KEEP ON GOING******");
 
         }
         else
