@@ -10,7 +10,7 @@ public class lab1 {
         Scanner s1=new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("###.##");
 
-        double commision=-1;
+        double commission=-1;
         double salesTotal=s1.nextDouble();
         Boolean flag=true;
         if(salesTotal<0 || salesTotal>5000)
@@ -19,24 +19,24 @@ public class lab1 {
         }
         else if(salesTotal<1000)
         {
-            commision=0.05 ;// 5% Commission
+            commission=0.05 ;// 5% Commission
 
         }
         else if(salesTotal>=100 && salesTotal<4000)
         {
-            commision=0.10 ;// 10% Commission
+            commission=0.10 ;// 10% Commission
 
         }
         else
         {
-            commision=.15;//15% Commission
+            commission=.15;//15% Commission
         }
 
         if(flag)
         {
 
-            System.out.println("---------Result-------\nCommission is "+commision*100+"%");
-            System.out.println("Salesperson has earned $"+df.format(salesTotal*commision)+" commission for the "+salesTotal+" sales.\n ******KEEP ON GOING******");
+            System.out.println("---------Result-------\nCommission is "+commission*100+"%");
+            System.out.println("Salesperson has earned $"+df.format(salesTotal*commission)+" commission for the "+salesTotal+" sales.\n ******KEEP ON GOING******");
 
         }
         else
