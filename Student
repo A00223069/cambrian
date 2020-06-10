@@ -1,0 +1,92 @@
+public class Student {
+    private String studentName;
+    private Double studentNamegrade;
+
+    public Student()
+    {
+        studentName="David";
+        studentNamegrade=99.9;
+    }
+    public Student(String studentName)
+    {
+        this();
+        this.studentName=studentName;
+
+
+    }
+    public Student(Double studentNamegrade)
+    {
+        this();
+        this.studentNamegrade=studentNamegrade;
+    }
+    public Student(String studentName, Double studentNamegrade)
+    {
+        this.studentName=studentName;
+        this.studentNamegrade=studentNamegrade;
+    }
+
+    public void setName(String studentName)
+    {
+       this.studentName=studentName;
+    }
+    public String getName()
+    {
+        return studentName;
+    }
+
+    public void setGrade(Double studentNamegrade)
+    {
+        this.studentNamegrade=studentNamegrade;
+
+    }
+    public Double getGrade()
+    {
+        return studentNamegrade;
+    }
+    public void getAdmission()
+    {
+        if(studentNamegrade<33.3)
+        {
+            System.out.println("FAIL");
+            System.out.println(studentName +" failed with grade "+studentNamegrade);
+        }
+        else if(studentNamegrade>=33.3 && studentNamegrade<50)
+        {
+            System.out.println("PASS:: D GRADE");
+            System.out.println(studentName +" passed with grade "+studentNamegrade);
+        }
+        else if(studentNamegrade>=50 && studentNamegrade<60)
+        {
+            System.out.println("PASS:: C GRADE");
+            System.out.println(studentName +" passed with grade "+studentNamegrade);
+
+        }
+        else if(studentNamegrade>=60 && studentNamegrade<70)
+        {
+            System.out.println("PASS:: B GRADE");
+            System.out.println(studentName +" passed with grade "+studentNamegrade);
+        }
+        else if(studentNamegrade>=70 && studentNamegrade<80)
+        {
+            System.out.println("PASS:: B+ GRADE");
+            System.out.println(studentName +" passed with grade "+studentNamegrade);
+        }
+        else if(studentNamegrade>=80 && studentNamegrade<90)
+        {
+            System.out.println("PASS:: A GRADE");
+            System.out.println(studentName +" passed with grade "+studentNamegrade);
+
+        }
+        else if(studentNamegrade>=90 && studentNamegrade<=100)
+        {
+            System.out.println("PASS:: A+ GRADE");
+            System.out.println(studentName +" passed with grade "+studentNamegrade);
+        }
+        else
+        {
+            System.out.println("PASS:: A+ GRADE");
+            System.out.println(studentName +" passed with grade "+studentNamegrade);
+        }
+
+    }
+}
