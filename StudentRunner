@@ -1,0 +1,54 @@
+public class StudentRunner {
+
+    public static void main(String[] args)
+    {
+        System.out.println("-----DEFAULT-----");
+        Student s1=new Student();
+        System.out.println("NAME:"+s1.getName());
+        System.out.println("GRADE:"+s1.getGrade());
+        admission(s1);
+        System.out.println();
+
+        System.out.println("----NOW YOU DONOT NEED ONLY SCANNER TO SET NAME\n YOU CAN ALSO DO IT BY PARAMETERISED CONSTRUCTOR \nAND BY CALLING s1.setName(***) or s1.setGrade(***)  ----");
+        System.out.println("\n:::::BY CONSTRUCTOR:::::");
+
+        Student s2=new Student("JERRY");
+        System.out.println("NAME:"+s2.getName());
+        System.out.println("GRADE:"+s2.getGrade());
+        admission(s2);
+        System.out.println();
+
+        Student s3=new Student(87.0);
+        System.out.println("NAME:"+s3.getName());
+        System.out.println("GRADE:"+s3.getGrade());
+        admission(s3);
+        System.out.println();
+
+
+
+        Student s4=new Student("TOM",67.0);
+        System.out.println("NAME:"+s4.getName());
+        System.out.println("GRADE:"+s4.getGrade());
+        admission(s4);
+        System.out.println();
+
+        System.out.println("NOW BY FUNCTIONS");
+        Student s5=new Student();
+        s5.setName("Pokemon");
+        s5.setGrade(23.0);
+        System.out.println("NAME:"+s5.getName());
+        System.out.println("GRADE:"+s5.getGrade());
+        admission(s5);
+        System.out.println();
+
+
+
+
+    }
+    public static void admission(Student obj)
+    {
+
+        obj.getAdmission();
+
+    }
+}
